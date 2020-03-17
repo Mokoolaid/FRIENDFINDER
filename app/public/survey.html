@@ -1,56 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../assets.css" />
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <h2>Survey Questions</h2>
-
-    <br>
-
-    <h2>About You!</h2>
-
-    <br>
+    <hr />
+    <br />
+    <h3>About You Boo!</h3>
+    <br />
+    <br />
 
     <div class="user-data">
-        <h3>Name(required)</h3>
-        <input type="text" id="username" class="userdata">
-
+      <h4>Name (required)</h4>
+      <input type="text" id="user-name" class="user-data" />
+      <br />
     </div>
 
-    <br>
-
-
-    <div>
-
+    <div class="user-data">
+        <br />
+      <h4>Image Url (required)</h4>
+      <br />
+   
+      <input type="text" id="image-Url" class="user-data" />
+   
     </div>
-    <h4>Image Url (required)</h4>
+    <br />
+    
 
-    <input type="text" id="imageUrl" class="userdata">
-
-    <select class="custom-select">
-
-        <div class="custom select">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-    </select>
+    <div class>
+        <h2>Question 1</h2>
+        <br />
+       <div><h4>"You care about what other people think"</h4></div> 
+      <select class= "custom-select" id=Q1>
+        <option selected>Select One and Be Honest</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
     </div>
-</body>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 2</h2>
+        <div><h4>"You are relaxed under pressure"</h4></div>
+      <select class= "custom-select" id=Q2>
+        <option selected>Yes I am asking</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 3</h2>
+        <div><h4>"You are on time"</h4></div>
+      <select class="custom-select" id=Q3>
+        <option selected>Tell the Truth</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 4</h2>
+        <div><h4>"You have an active imagination"</h4></div>
+              <select class="custom-select" id=Q4>
+        <option selected>Okay pick one</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 5</h2>
+        <div><h4>"People can rely on you"</h4></div>
+      <select class="custom-select" id=Q5>
+        <option selected>Bitch Better Have My Money</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 6</h2>
+        <div><h4>"You are always happy with people"</h4></div>
+      <select class="custom-select" id=Q6>
+        <option selected>"hahahaha pick one"</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 7</h2>
+        <div><h4>"You are an intense person"</h4></div>
 
+      <select class="custom-select" id=Q7>
+        <option selected>Are you really?</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+
+    <div class>
+        <h2>Question 8</h2>
+        <div><h4>"You are a neat freak"</h4></div>
+      <select class="custom-select" id=Q8>
+        <option selected>Don't Lie</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+      <div><h4></h4></div>
+    </div>
+    <br />
+    <br />
+
+    <div class>
+        <h2>Question 9</h2>
+        <div><h4>"Your parent rules your life"</h4></div>
+      <select class="custom-select" id=Q9>
+        <option selected>Let me guess</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+    </div>
+    <br />
+    <br />
+    <div class>
+        <h2>Question 10</h2>
+        <div><h4>"You are a total Narcisist"</h4></div>
+      <select class="custom-select" id=Q10>
+        <option selected>Select One</option>
+        <option value="1">Why yes of course! (British Accent)</option>
+        <option value="2">Yeah Sure</option>
+        <option value="3">Couldn't Give a Shit</option>
+        <option value="4">Nah, I am good</option>
+        <option value="5">F%6K You and the horse you rode in on!</option>
+      </select>
+      <button id='submit' type ='submit'class="btn btn-primary btn-lg"role="button">
+        Submit</a>
+    </div>
+    <script>
+        $('#submit' ).on('click', function(event){
+            event.preventDefault();
+           
+            const user = {
+                name: $("user-name").val().trim(),
+                image: $("image-url").val().trim(),
+                answers: [
+                    $('#Q1').val(),
+                    $('#Q2').val(),
+                    $('#Q3').val(),
+                    $('#Q4').val(),
+                    $('#Q5').val(),
+                    $('#Q6').val(),
+                    $('#Q7').val(),
+                    $('#Q8').val(),
+                    $('#Q9').val(),
+                    $('#Q10').val()
+
+
+                ]
+            }
+            
+        });
+        $.post ("api/friends"), name, function(data){
+            console.log(data)
+            console/log(user)
+        }
+    </script>
+  </body>
 </html>
