@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("path");
+// const bodyParser = require("body-parser");
 
 //var express = require("express");
 
@@ -18,7 +18,7 @@ var PORT = process.env.PORT || 8181;
 // The code below is pretty standard.
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+// app.use(express.static("app/public"));
 // ================================================================================
 // ROUTER
 // The below points our server to a series of "route" files.
@@ -32,6 +32,10 @@ require("./app/routing/htmlRoutes")(app);
 // LISTENER
 // The below code effectively "starts" our server
 // ==============================================================================
+// app.use(bodyParser.json);
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.text());
+// app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
